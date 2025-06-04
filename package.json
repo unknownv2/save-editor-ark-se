@@ -1,0 +1,60 @@
+{
+  "name": "editor-ark-survival-evolved",
+  "author": "unknown",
+  "description": "ARK local profile data editor.",
+  "version": "0.2.0",
+  "vantage": {
+    "game": "ARK: Survival Evolved",
+    "scid": "c1000100-ccd3-4685-bb6c-83ca3aa28934",
+    "thumbnailUrl": "https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcWc3eFQ_X4nIjkJmjxMx6mJn4fdjh0b6n4PmOFKL2Fz7XgOe1ggwoBr6UY0_Rx1RHf1BBEc06JA3Oo0qEbd0qBlX0wlBxMCAf4LTeYnu.6_uI5LwhzGNekFLD5T.MFNbXHpV0AS.BgtSqxnnMOV1b61jsAidXZrJvvzBdgdR7rtw-&w=128&h=128",
+    "name": "Campaign Profile Editor",
+    "fileFilter": "ShooterGameSavedSavedArksLocalLocalPlayer.arkprofile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unknownv2/save-editor-ark-se"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "aurelia-animator-css": "^1.0.4",
+    "aurelia-bootstrapper": "^2.1.1",
+    "big-integer": "^1.6.26",
+    "bluebird": "^3.5.1",
+    "crc-32": "^1.1.1",
+    "libvantage": "^0.3.1",
+    "requirejs": "^2.3.5",
+    "text": "github:requirejs/text#latest",
+    "tslib": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.52",
+    "aurelia-cli": "^0.32.0",
+    "aurelia-testing": "^1.0.0-beta.4.0.0",
+    "aurelia-tools": "^1.0.0",
+    "browser-sync": "^2.23.2",
+    "connect-history-api-fallback": "^1.5.0",
+    "debounce": "^1.1.0",
+    "event-stream": "^3.3.3",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-changed-in-place": "^2.3.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-notify": "^3.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.3",
+    "gulp-tslint": "^5.0.0",
+    "gulp-typescript": "^3.2.3",
+    "gulp-watch": "^4.3.11",
+    "html-minifier": "^3.5.8",
+    "minimatch": "^3.0.4",
+    "through2": "^2.0.3",
+    "tslint": "^3.11.0",
+    "typescript": "^2.6",
+    "uglify-js": "^3.3.4",
+    "vinyl-fs": "^2.4.3"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/aurelia build --env prod",
+    "watch": "./node_modules/.bin/aurelia run --watch"
+  }
+}

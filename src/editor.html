@@ -1,0 +1,24 @@
+<template>
+    <require from="libvantage/vantage.css"></require>
+	
+	<header>Player</header>
+	<card label="Character Name">
+		<v-text value.bind="playerName"></v-text>
+	</card>
+	<card label="Level">
+		<v-number min="0" max="130" value.bind="editorValues[0].property"></v-number>
+		<v-button click.delegate="maxValue(0)"> Max</v-button>
+	</card>		
+	<card label="Experience Points">
+		<v-number min="0" max="1000000" step=".01" value.bind="editorValues[1].property | precision:2"></v-number>
+		<v-button click.delegate="maxValue(1)"> Max</v-button>		
+	</card>	
+	<card label="Engram Points">
+		<v-number min="0" max="100000" value.bind="editorValues[2].property"></v-number>
+		<v-button click.delegate="maxValue(2)"> Max</v-button>		
+	</card>	
+	<header>Information</header>	
+	<card label="Respawn your character to update the level in inventory.">
+	
+	</card>
+</template>
